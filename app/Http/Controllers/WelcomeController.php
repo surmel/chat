@@ -219,7 +219,7 @@ class WelcomeController extends Controller
         }
     }
     
-    public function signAsGuest(Request $request){
+    public function signAsGuest(Request $request){        
         if($request->input('nickname')){
             $nickname = "Guest_".$request->input('nickname');
             $check_name = Guest::checkNickname($nickname);
@@ -239,6 +239,10 @@ class WelcomeController extends Controller
                 Session::flash('nickError', 'Choose Another Nickname');
                 return redirect('/');
             }
+        }
+        else {
+            Session::flash('nickError', 'Enter Your Nickname');
+            return redirect('/');
         }
     }
     
