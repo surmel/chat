@@ -1,0 +1,315 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    height: 100vh;
+}
+.full-height {
+    height: 100vh;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.position-ref {
+    position: relative;
+}
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.content {
+    text-align: center;
+}
+.title {
+    font-size: 84px;
+}
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.m-b-md {
+    margin-bottom: 30px;
+}
+.rooms {    
+    height: 100vh;
+    width:20%;
+    position:relative;
+    background:#4E394C;
+    float:left;
+}
+.room_title {
+    margin-top: 15px;
+    font-size: 40px;
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.room_ul {
+    list-style: none;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px;
+    font-weight: 600;
+}
+.room_li {
+    padding:5px 0px;
+}
+.room_li:hover{
+    background:#241A23;
+    cursor: pointer;
+}
+.top_section{
+    position: relative;
+    width:80%;
+    height:60px;
+    float:right;
+    -webkit-box-shadow:0px 1px 1px #4E394C;
+    -moz-box-shadow:0px 1px 1px #4E394C;
+    box-shadow:0px 1px 1px #4E394C;
+}
+.font-weight{
+    font-weight: 800 !important;
+}
+.position {
+    float:right;
+    margin-right: 90px;
+    margin-top: 13px;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.content {
+    position:relative;
+    float:left;
+    width:80%;
+    height:calc(100vh - 60px);
+}
+.del_img {
+    width:10px;
+    margin-left:10px;
+    display:none;
+}
+.room_li:hover .del_img{
+    display: inline-block;
+}
+.link_img {
+    width:15px;
+    margin-left:15px;
+    display:none;
+}
+.room_li:hover .link_img{
+    display: inline-block;
+}
+.confirm_layer{
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    background-color:rgba(0,0,0,0.8);
+    z-index:9999;
+    display: none;
+}
+.confirm {
+    height: 190px;
+    width: 490px;
+    background: lightgrey;
+    position: relative;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 16% auto;
+    border-radius: 5px;
+}
+.question{
+    font-size:40px;		
+}
+.yesorno {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+.pleasewait{
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    background-color:rgba(0,0,0,0.8);
+    z-index:9999;
+    display: none;
+}
+.wait_img{
+    display:block;
+    width:50px;
+    margin: 23% auto;
+}
+.room_info{
+    position:relative;
+    height:65px;
+    width:100%;
+    padding:10px;
+}
+.conversation {
+    position:relative;
+    height:calc(100vh - 195px);
+    width:100%;
+    padding: 10px 60px;
+    overflow: auto;
+}
+.send_messages {
+    position:relative;
+    bottom:0px;
+    padding:15px 100px;
+    height:65px;
+    width:100%;    
+}
+.welcome {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    z-index: 9;
+}
+.message_container{
+    border:1px solid #EDEDED;
+    margin-bottom:5px;
+    border-radius:15px;
+    padding:10px;
+}
+.message_container p {
+    margin:0px;
+    text-align:right;
+}
+.sender_name{
+    text-align:right;
+    font-weight: 600;
+    color: #000;
+}
+.send_date{    
+    font-size: 10px;
+    color: #ccc;
+}
+.active_usersbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 11px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+}
+.active_users {
+    position: relative;
+    display: inline-block;
+    float:right;
+    margin-right:70px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.active_users:hover .dropdown-content {
+    display: block;
+}
+.active_users:hover .active_usersbtn {
+    background-color: #3e8e41;
+}
+.welcome_message {
+    font-size: 60px;
+    margin-top: 100px;
+    font-weight: 600;
+}
+.enter_nickname {
+    font-size: 20px;
+}
+.nick_input{
+    width: 450px;
+    margin: 0px auto;
+}
+.prefix{
+    line-height: 33px;
+    float: left;
+    width: 15%;
+}
+.input{
+    width: 85%;
+    float: right;
+}
+.room_pic{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 60px;
+    z-index: 999;
+    transition:0.5s all ease;
+}
+.room_pic img{
+    width:100%;
+}
+.room_pic:hover {
+    height:300px;
+    width:300px;
+}
+.errors {
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    z-index: 999;
+}
+.room_name {
+    width: 600px;
+    padding: 15px 30px;
+    font-size: 20px;
+    float: left;
+    font-weight: 600;
+}
+#copyLink{
+    position: relative;
+    width: 500px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 100px auto;
+    
+}
+
+.link_layer{
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    background-color:rgba(0,0,0,0.8);
+    z-index:9999;
+    display: none;
+}
+
